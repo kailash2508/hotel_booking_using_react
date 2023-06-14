@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  justify-content: space-around;
+}
+.login_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid grey;
+  margin: 30vh 5vw auto 5vw;
+  padding: 3vh 2vw;
+}
+
+.login_input {
+  height: 4vh;
+  width: 80%;
+  padding: 1vh 1vw;
+  font-weight: bold;
+  margin: 2vh 2vw;
+  font-size: 20px;
+}
+
+.login_btn {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1vh 1vw;
+  margin-top: 3vh;
+  border-radius: 22px;
+}
+.book_btn {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 1vh 1vw;
+  margin-top: 3vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 22px;
+}
+.login_link {
+  text-decoration: none;
+  color: black;
+}
+.hotel {
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  flex-direction: row;
+  width: 80vw;
+  height: 75vh;
+  justify-content: space-around;
+  align-items: center;
+}
+.hotel_card {
+  display: flex;
+  flex-direction: column;
+}
+.hotel_price {
+  align-items: end;
+  color: red;
+  display: flex;
+  justify-content: flex-end;
+}
+.date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.date_from {
+  display: flex;
+  flex-direction: column;
+}
+.date_to {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.header_link {
+  text-decoration: none;
+  color: black;
+  padding-right: 10px;
+}
+
+.booking_table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 10px;
+}
