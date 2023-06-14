@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
-import hotel_image from './hotel.jpg';
 import { useDispatch, useSelector } from 'react-redux';
 import { bookHotels } from './redux/actions/action';
 
@@ -41,7 +40,7 @@ export default function Hotels() {
     return hotels.map((hot) => {
       return (
         <div className="hotel_card">
-          <img src={hot.image === 'hotel_image' ? hotel_image : hot.image} />
+          <img src={hot.image === 'hotel_imag' ? hot.image : hot.image} />
           <h2>{hot.name}</h2>
           <h3 className="hotel_price">{hot.price}</h3>
           <div className="date">
