@@ -1,0 +1,19 @@
+.mainContainer {
+  /* display: block; */
+  width: 100vw;
+  height: 100vh;
+}
+/* .mainHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+.active {
+  color: var(--primary);
+}
+.header-links {
+  position: absolute;
+  top: 30px;
+  left: 120px;
+}

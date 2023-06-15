@@ -17,10 +17,11 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
+    <div>
       <Routes>
         <Route path="/home/*" element={<Main />} />
         <Route path="/booking" element={<Bookings />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/*" element={<Login />} />
       </Routes>
     </div>

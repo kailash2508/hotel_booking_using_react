@@ -1,0 +1,77 @@
+.login_screen {
+  display: flex;
+  /* justify-content: space-around; */
+  background-image: url(https://images.pexels.com/photos/1591361/pexels-photo-1591361.jpeg?auto=compress&cs=tinysrgb);
+  /* Full height */
+  height: 100vh;
+  width: 100vw;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: flex-end;
+}
+h1 {
+  padding-bottom: 15px;
+}
+.header_icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.login_form {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  margin: 27vh 5vw auto 5vw;
+  padding: 3vh 2vw;
+  border-radius: 12px;
+}
+.input_img {
+  position: absolute;
+}
+.login_input {
+  height: 4vh;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #aaaaaa;
+}
+.login_input:focus {
+  border-color: var(--primary);
+}
+.login_input:focus ~ img.input_img {
+  color: blue;
+}
+.input_box {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.login_btn {
+  font-size: 20px;
+  font-weight: bold;
+  width: 93%;
+  padding: 1vh 1vw;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+  border-radius: 7px;
+  background-color: var(--primary);
+  color: var(--white);
+}
+.book_btn {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 1vh 1vw;
+  margin-top: 3vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 22px;
+}
+.login_link {
+  text-decoration: none;
+  color: black;
+}
