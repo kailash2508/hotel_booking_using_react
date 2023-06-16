@@ -25,7 +25,7 @@ export default function Hotels() {
     let hotel = hotels.filter((obj) => obj.id === id);
     dispatch(
       bookHotels([
-        booking.length - 1,
+        booking.length ,
         userDetail[0].id,
         userDetail[0].username,
         id,
