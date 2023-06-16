@@ -2,11 +2,12 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import { bookHotels } from './redux/actions/action';
+import './hotel.css';
 
 export default function Hotels() {
   const userDetail = useSelector((state) => state.allUsers.logged_user);
   const hotels = useSelector((state) => state.allHotels.hotels);
-  console.log(hotels);
+
   const date = new Date();
   const x = `${date.getFullYear()}-${
     date.getMonth() + 1 > 10 ? date.getMonth() + 1 : '0' + (date.getMonth() + 1)
@@ -40,27 +41,13 @@ export default function Hotels() {
     return hotels.map((hot) => {
       return (
         <div className="hotel_card">
-          <img src={hot.image === 'hotel_imag' ? hot.image : hot.image} />
+          <img
+            width="275"
+            height="200"
+            src={hot.image === 'hotel_imag' ? hot.image : hot.image}
+          />
           <h2>{hot.name}</h2>
           <h3 className="hotel_price">{hot.price}</h3>
-          <div className="date">
-            <div className="date_from">
-              From:
-              <input
-                value={from}
-                onChange={(e) => setFrom(e.target.value)}
-                type="date"
-              />
-            </div>
-            <div className="date_to">
-              To:
-              <input
-                value={to}
-                onChange={(e) => setTo(e.target.value)}
-                type="date"
-              />
-            </div>
-          </div>
           <button
             className="book_btn"
             onClick={() => {
@@ -79,7 +66,25 @@ export default function Hotels() {
     }
   }, [userDetail[0]]);
   return (
-    <div>
+    <div className="hotelContainer">
+      <div className="date">
+        <div className="date_from">
+          From:
+          <input
+            value={from}
+            onChange={(e) => setFrom(e.target.value)}
+            type="date"
+          />
+        </div>
+        <div className="date_to">
+          To:
+          <input
+            value={to}
+            onChange={(e) => setTo(e.target.value)}
+            type="date"
+          />
+        </div>
+      </div>
       <div className="hotel">{Hotel()}</div>
     </div>
   );

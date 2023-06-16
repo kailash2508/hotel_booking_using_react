@@ -9,11 +9,21 @@
   left: 0;
 } */
 
-.active {
-  color: var(--primary);
-}
 .header-links {
   position: absolute;
   top: 30px;
   left: 120px;
+}
+.logOut {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.header_link {
+  text-decoration: none;
+  color: black;
+  padding-right: 10px;
+}
+.active {
+  color: var(--primary);
 }

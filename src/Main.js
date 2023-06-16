@@ -31,6 +31,9 @@ export default function Main() {
             Bookings
           </NavLink>
         </div>
+        <Link className="logOut header_link" to="/login">
+          Log Out
+        </Link>
       </div>
       <Routes>
         <Route path="/hotels" element={<Hotels />} />

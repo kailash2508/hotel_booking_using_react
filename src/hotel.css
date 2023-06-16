@@ -1,0 +1,46 @@
+.hotelContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 8vw;
+  padding-top: 5vh;
+  justify-content: space-around;
+  /* height: 100vh; */
+  margin: 0px;
+}
+.hotel {
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  flex-direction: row;
+  width: 80vw;
+  /* height: 75vh; */
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 6vh;
+}
+.hotel_card {
+  display: flex;
+  flex-direction: column;
+}
+.hotel_price {
+  align-items: end;
+  color: red;
+  display: flex;
+  justify-content: flex-end;
+}
+.date {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* .date_from {
+  display: flex;
+  flex-direction: column;
+} */
+.date_to {
+  padding-left: 3vw;
+}
+input {
+  margin-left: 0.5vw;
+}

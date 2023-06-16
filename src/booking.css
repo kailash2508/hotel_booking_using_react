@@ -1,0 +1,17 @@
+.bookingContainer {
+  display: flex;
+  /* flex-direction: column; */
+  position: absolute;
+  top: 70px;
+  left: 8vw;
+  padding-top: 5vh;
+  justify-content: space-around;
+  /* height: 100vh; */
+  margin: 0px;
+}
+.booking_table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  grid-gap: 30px;
+}
